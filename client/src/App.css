@@ -1,0 +1,754 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+html{
+  overflow-x:hidden;
+}
+.Navbar{
+  width: 100%;
+  height: 15vh;
+  position:fixed;
+  z-index: 2;
+}
+.Navbar nav{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(0, 0, 0);
+  box-shadow: 5px 5px 5px rgb(255, 255, 255,0.2);
+}
+nav h1{
+  padding: 15px;
+  color: white;
+  font-family: sans-serif;
+  font-size: 25px;
+  text-decoration: none;
+}
+#logo{
+  text-decoration: none;
+}
+nav ul{
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav button{
+  margin-right: 15px;
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  border:1px solid white;
+  background:black;
+  color: white;
+  cursor: pointer;
+}
+nav button:active{
+  background: white;
+  color: black;
+}
+nav button a{
+  text-decoration: none;
+  color: white;
+}
+ul li{
+  margin: 2%;
+  list-style: none;
+  padding: 10px;
+  color: white;
+  font-family: sans-serif;
+  
+}
+ li a{
+  text-decoration: none;
+  color: white;
+}
+li a:hover{
+  color: black;
+  transition: all 1s;
+  cursor: pointer;
+}
+.buttons-div{
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.buttons-div a{
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+}
+
+/* home */
+
+.home{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.images{
+  width: 100%;
+  height: 100%;
+}
+.images img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.warp{
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.arrow{
+  width: 100%;
+  height: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.left-arrow{
+  width: 10%;
+  padding: 10px;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.right-arrow{
+  width: 10%;
+  padding: 10px;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.left-arrow button{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+  background-color:rgb(217, 203, 203,0.5);
+}
+.right-arrow button{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  background-color:rgb(217, 203, 203,0.5);
+  color: white;
+}
+.left-arrow button:hover{
+  background-color: rgb(255, 255, 255,0.5);
+  transition: all 0.5s;
+}
+.right-arrow button:hover{
+  background-color: rgb(255, 255, 255,0.5);
+  transition: all 0.5s;
+}
+.search{
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search input{
+  width: 400px;
+  height: 35px;
+  border: none;
+  outline: none;
+  border-radius: 5px 0px 0px ;
+  padding: 15px;
+  font-size: 13px;
+  font-family: sans-serif;
+  box-shadow: 2px 2px 5px rgb(255, 255, 255,.5);
+}
+.search button{
+  width: 100px;
+  height: 35px;
+  border: none;
+  border-radius: 0px 0px 5px;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgb(255, 255, 255,.5);
+  background-color: rgb(66, 66, 236);
+  color: white;
+  font-weight: 500;
+}
+.home footer{
+  width: 100%;
+  height: 10vh;
+  background: darkcyan;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home footer h3{
+  font-family: sans-serif;
+  color: white;
+  
+}
+/* products */
+
+.Product{
+  width: 100%;
+  height: auto;
+}
+.Product h1{
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  font-family: sans-serif;
+  text-decoration:underline;
+}
+.Product p{
+  width: 100%;
+  text-align: center;
+  font-family: sans-serif;
+}
+/* Card */
+.Card{
+  width: 300px;
+  height: 300px;
+  background:rgb(0, 0, 0);
+  margin: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 5px 2px 3px rgba(0, 0, 0, 0.3);
+}
+.Card-image{
+  width: 80%;
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.Card-image img{
+  width: 100%;
+  height: 90%;
+  border-radius: 5px;
+  object-fit: cover;
+  padding: 10px;
+  margin: 2%;
+  border-radius: 5px;
+}
+.Card-image p{
+  margin: 2%;
+  padding: 10px;
+  font-size: 15px;
+  width: 100%;
+  text-align: center;
+  font-family: sans-serif;
+  color: white;
+}
+.Card-qantity{
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.price{
+  width: 50%;
+  font-family: sans-serif;
+  
+}
+.price p{
+  color:white;
+}
+.Cart-button{
+  width: 150px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-family: sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size:10px;
+}
+.Cart-button:active{
+  background: rgb(145, 130, 130);
+  color: rgb(255, 255, 255);
+}
+.products{
+  margin: 2%;
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1.5rem;
+}
+
+/* Login */
+.Login-container{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url('https://www.archanaskitchen.com/images/archanaskitchen/Indian_Non_Veg_Recipes/Butter_chicken_recipe.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Login-container h1{
+  margin: 2%;
+  color: white;
+  font-family: sans-serif;
+  text-transform: uppercase;
+}
+.Login-form{
+  width: 50%;
+}
+.Login-container form{
+  width: 500px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(248, 248, 248,0.5);
+  border-radius: 10px;
+}
+.Login-container form input{
+  width: 80%;
+  height: 10%;
+  margin: 2%;
+  padding: 15px;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+}
+#Loginbutton{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(69, 69, 255);
+  color: white;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 0%;
+}
+.icons{
+  width: 40%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 2%;
+}
+.icons a{
+  text-decoration: none;
+  font-size: 25px;
+  border-radius: 50%;
+  color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icons a:hover{
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: all 0.5s;
+}
+#facebook{
+  font-size: 23px;
+  padding: 1.5px;
+}
+.cart-container{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cart-overlay{
+  width: 90%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 7%;
+}
+.cart-content{
+  width: 80%;
+  margin: 1%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  
+}
+.cart-image{
+  width: 15%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+}
+.cart-image img{
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+}
+.product-name{
+  width: 20%;
+}
+.product-name p{
+  text-align: center;
+}
+.cart-button{
+  width: 20%;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+.cart-button button{
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.totalprice{
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.totalprice a{
+  text-decoration: none;
+  color:red;
+  font-family: sans-serif;
+  margin: 1%;
+}
+.totalprice button{
+  width: 170px;
+  height: 30px;
+  border: 1px solid white;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.totalprice button a{
+  text-decoration: none;
+  color: white;
+}
+.Empty-cart{
+  width: 100%;
+  text-align: center;
+}
+.Empty-cart a{
+  text-decoration: none;
+  font-family: sans-serif;
+  color: red;
+}
+.Empty-cart p{
+  font-family: sans-serif;
+  margin: 2%;
+  font-size: 18px;
+}
+.Order-form{
+  width: 100%;
+  height: 150vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.Order-form h1{
+  font-family: sans-serif;
+  font-size: 25px;
+  text-align: center;
+  padding: 5px;
+ 
+}
+.Order-form form{
+  margin: 1%;
+  width: 500px;
+  height: auto;
+  
+}
+.address{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.address-place{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.street-city{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+form select{
+  padding: 5px;
+  margin:2%;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  width:50%;
+  height:7vh;
+  border:1px solid rgb(76, 76, 232) ;
+}
+
+
+.Order-form form input{
+  width: 95%;
+  height: 10%;
+  margin: 2%;
+  padding: 15px;
+  outline: none;
+  border-radius: 5px;
+  border:1px solid rgb(76, 76, 232) ;
+
+}
+.Order-form form input:focus{
+  border: 1.5px solid rgb(76, 76, 232);
+}
+#pay-button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 12px;
+  border: none;
+}
+#ToCart{
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  font-family: sans-serif;
+  color: red;
+}
+.About-container{
+  width: 100%;
+  height: 110vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+}
+.Aboutcontent{
+  width:95%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+
+}
+.Aboutcontent-image{
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows:1fr 1fr ;
+  /* grid-gap: 1rem; */
+  padding: 10px;
+}
+.Aboutcontent-para {
+  font-family: sans-serif;
+  width: 90%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 10px;
+}
+.Aboutcontent-para p{
+  margin: 2%;
+  font-family: sans-serif;
+  font-size: 15px;
+}
+.Aboutcontent-para h1{
+  margin: 2%;
+  font-size: 45px;
+  letter-spacing: 1px;
+}
+.Aboutcontent-image img{
+  width: 80%;
+  height: 90%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.Contact-container{
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: black;
+}
+.Contact-content{
+  width: 90%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Contact-content form {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 2%;
+  padding: 15px;
+  color: white;
+  background-color: rgb(255, 255, 255,0.3);
+  border-radius: 5px;
+  
+}
+.Contact-content form h1{
+  font-size: 25px;
+  width: 100%;
+  margin: 1.5%;
+  text-transform: uppercase;
+}
+.form-field{
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 2%;
+}
+.form-field label{
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: sans-serif;
+  color: white;
+}
+
+.form-field input{
+  width: 70%;
+  height: 100%;
+  border: 1px solid rgb(41, 44, 201);
+  opacity: 0.8;
+  outline: none;
+  border-radius: 3px;
+  padding: 15px;
+  font-family: sans-serif;
+  
+}
+.form-field input:focus{
+  border: 1.5px solid rgb(41, 44, 201);
+  opacity: 1;
+}
+.form-field textarea{
+  width: 70%;
+  height: 100%;
+  resize: none;
+  outline:none;
+  padding: 8px;
+  font-family: sans-serif;
+  border-radius: 3px;
+  font-size: 14px;
+  opacity: 0.8;
+  border: 1px solid rgb(41, 44, 201);
+
+}
+.form-field textarea:focus{
+  border: 1.5px solid rgb(41, 44, 201);
+  opacity: 1;
+}
+.Contact-content form button{
+  width: 150px;
+  height: 30px;
+  margin: 3%;
+  font-size: 12px;
+  cursor: pointer;
+  background: black;
+  color: white;
+  font-family: sans-serif;
+  font-weight: 550;
+  text-transform: uppercase;
+  border: 1px solid white;
+  border-radius: 3px;
+  margin-left: 50%;
+  transform: translateX(-25%);
+
+}
+.Contact-content form button:active{
+  cursor: progress;
+  background-color: white;
+  color: black;
+}
+.contact-conclusion{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  color: white;
+}
+.contact-conclusion h1{
+  text-transform: uppercase;
+  font-family: sans-serif;
+  margin: 2%;
+}
+.contact-conclusion p{
+  margin: 2%;
+  font-family: sans-serif;
+  font-size: 14px;
+}
